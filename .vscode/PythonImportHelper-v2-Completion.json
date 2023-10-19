@@ -1,0 +1,65 @@
+[
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "chars",
+        "kind": 5,
+        "importPath": "generator",
+        "description": "generator",
+        "peekOfCode": "chars = \"abcdefghijklmnopqrstuvwxyz123456789!#$%&/(=+-{*?¿¡}][{\"\nprint(\"GENERATOR OF PASSWORDS\")\nwhile True:\n    password = \"\"\n    for i in range(16):\n        password += random.choice(chars)\n    print(f\"Your Password: {password}\")\n    user_input = input(\"¿You Want To Generate A New Password?: \").strip().lower()\n    if user_input != \"yes\":\n        break",
+        "detail": "generator",
+        "documentation": {}
+    },
+    {
+        "label": "años_bisiestos",
+        "kind": 2,
+        "importPath": "leaps",
+        "description": "leaps",
+        "peekOfCode": "def años_bisiestos(inicio):\n    bisiestos = [año for año in range(inicio +1, inicio+100)if(año%4==0 and año%100 != 0)or(año % 400==0)]\n    for bisiestos in bisiestos[:30]:\n        print(bisiestos)\naño_usuario = int (input(\"Please , Write The Starting Year To Know The NExt Leap Years: \"))\naños_bisiestos(año_usuario)",
+        "detail": "leaps",
+        "documentation": {}
+    },
+    {
+        "label": "año_usuario",
+        "kind": 5,
+        "importPath": "leaps",
+        "description": "leaps",
+        "peekOfCode": "año_usuario = int (input(\"Please , Write The Starting Year To Know The NExt Leap Years: \"))\naños_bisiestos(año_usuario)",
+        "detail": "leaps",
+        "documentation": {}
+    },
+    {
+        "label": "animacion_completar_vertical",
+        "kind": 2,
+        "importPath": "words",
+        "description": "words",
+        "peekOfCode": "def animacion_completar_vertical(palabra):\n    for letra in palabra:\n        animacion = 'a'\n        while animacion <= letra:\n            print(animacion, end=\"\\r\")\n            time.sleep(0.1) \n            animacion = chr(ord(animacion) + 1)\n        print(letra)\n        time.sleep(0.5)  \ndef animacion_busqueda_letra(letra):",
+        "detail": "words",
+        "documentation": {}
+    },
+    {
+        "label": "animacion_busqueda_letra",
+        "kind": 2,
+        "importPath": "words",
+        "description": "words",
+        "peekOfCode": "def animacion_busqueda_letra(letra):\n    animacion = 'a'\n    while animacion <= letra:\n        print(animacion, end=\"\\r\")\n        time.sleep(0.1) \n        animacion = chr(ord(animacion) + 1) \nwhile True:\n    print(\"Panel de Interacción:\")\n    print(\"1. Complete Word Vertically\")\n    print(\"2. Complete Word Horizontally\")",
+        "detail": "words",
+        "documentation": {}
+    }
+]
