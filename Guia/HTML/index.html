@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!---Primer etiqueta doctype indica al explorador web que el contenido presente es de HTML 5, si no esta entra a modo Quirks Mode sin el DOCTYPE-->
+<html>
+<head>
+    <title>First Web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 350px";><!--etiqueta de tr sirve para poder hacer tablas de contenido, style border genera un recuadro que guarde la informacion px es el grosor-->
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        </thead>
+        <tr><!--La etiqueta de tr con td anidada sirve para elementos estandares dentro de los elementos de nuestra tabla -->
+            <tbody>
+                <td>Antonio</td>
+                <td>Pérez</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Samuel</td>
+                <td>Arango</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Geremias</td>
+                <td>Springfield</td>
+                <td>110</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <td>-----------</td>
+                <td>Edad Acumulada:</td>
+                <td>154</td>    
+            </tfoot>
+    </table>
+
+
+    <!--ul es una lista no ordenada los puntos indican que no esta ordenada-->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <!--ol es una lista ordenada-->
+    <ol>
+        <li value="1">Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">Item 1</li>
+                <li style="list-style-type: lower-roman;">Item 2</li>
+                <li style="list-style-type: lower-roman;">Item 3</li>
+                <li style="list-style-type: lower-roman;">Item 4</li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <form action="/formulario" method="POST"> <!--Esto es para guardar ña informacion-->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="write your name" /> <!--Si usamos type="text" espera informacion de texto pero si usamos submit seria un boton, password para contraseña, radio para seleccionar un boton de interaccion, checkbox para caja de interaccion, file para seleccionar un archivo de la maquina donde se encuentre el usuario-->
+        <br>
+        <br>
+        <label for="lastname">LastName</label>
+        <input type="text" id="lastname" name="lastname" placeholder="write your lastname" />
+        <br>
+        <br>
+        <label for="comment">Comment</label>
+        <br>
+        <textarea cols="31" rows="3" id="comment" placeholder="write a comment" name="comment"></textarea>
+        <br>
+        <button type="button">Send</button> <!-- en button hay distintos metodos estan por ejemplo type="" button,reset,submit // IMPORTANTE SUBMIT FUNCIONA CON JAVASCRIPT PARA TENER EN CUENTA SU ACCION, RESET FORMATEA EL PANEL Y MUESTRA LOS VALORES POR DEFECTO, -->
+        <!--value="cualqueir nombre" agrega un valor establecido a cierto a caracter que deseamos-->
+    </form>
+    <h1>PRINCIPAL  TITTLE</h1> <!---Se indican Titulos dentro de la pagina web con H1-->
+    <h2>FIRST</h2> <!---Se indican SubTitulos dentro de la pagina web con H2-->
+    <p>First Oration</p>
+    <hr> <!---Crea lineas para separar información-->
+    <h3>SECOND</h3>  <!---Existen 6Heading para ir disminuyendo dentro del margen de subtitulos-->
+    <p>Second Oration. <span style="color:coral">Is a example for separate</span> for  <!---Etiqueta <span style="color: " </span> es para agregar un poco de estilo con base al color y etiqueta br para agregar espacios en el texto para la pagina web -->
+        tickets in the web page! </p>
+    <a target="_blank" href="https://www.google.co">Ir a google</a> <!-- <a> es para agregar referencia de web y etiqueta target es para abrir una nueva pestaña sin sobrecargar donde nos enocntramos-->
+    <br>
+    <img src="Images/Image.png" width="400" />  <!--<img src> sirve para importar imagenes-->
+</body>
+</html>
