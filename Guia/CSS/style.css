@@ -1,0 +1,58 @@
+#Titulo{
+    color:#2560a3;
+}
+.texto{
+    color: rgb(0, 0, 0);
+}
+div p{
+    color: #2560a3;
+}
+div h2, div h3{
+    color: brown;
+}
+*{
+    font-size: 24px;
+    color: black;
+}
+/* Asi se ponen 
+.color{
+    color:rgb(141, 141, 127)
+}
+comentarios en CSS*/
+.color{
+    /* border: 5px rgb(0, 0, 0) solid ; */
+    /* 1px representa una pequeña parte que contiene color
+    ALTERNATIVAS PARA UN CUADRO
+    dotted
+    dashed 
+    solid
+    double
+    groove
+    ridge
+    inset 
+    outset
+    none
+    hidden
+    */
+    border-style: solid;
+    border-color: rgb(179, 90, 90);
+    border-radius: 10px;
+    border-width: 0.2rem;
+}
+#fondo{
+    color: white;
+    background-color: rgba(66, 64, 204, 0.315);
+    /*opacity: 0.3;*/
+    height: 30px;
+    /*repeat-y repite imagenes de forma vertical y repeat-x de forma horizontal */
+    background: #f00 url('Image.png') repeat-y center bottom /cover;
+    
+}
+
+
+.margen{
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid 2px black;
+}
